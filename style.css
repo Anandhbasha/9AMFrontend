@@ -4,3 +4,24 @@
 .head2{
     color: white;
 }
+.head1{
+    background-color: palevioletred;
+    width: 500px;
+    height: 10vh;
+    margin: 100px 50px 5px 20px;
+    padding: 20px;
+    text-align: center;
+}
+.box{
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    background-color: slategray;
+}
+.boxes{
+    height: 200px;
+    width: 300px;
+    border: 2px dashed rebeccapurple;
+    border-radius: 5px 10px 50px 100px;
+    background:linear-gradient(#0a000047, #000000, #000000b3), url(download.jpeg);
+}
