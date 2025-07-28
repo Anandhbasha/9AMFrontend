@@ -20,8 +20,11 @@
 }
 .boxes{
     height: 200px;
-    width: 300px;
+    width: 1000px;
     border: 2px dashed rebeccapurple;
     border-radius: 5px 10px 50px 100px;
-    background:linear-gradient(#0a000047, #000000, #000000b3), url(download.jpeg);
+    background:linear-gradient(#0a000047, #000000, #000000b3), url(download.jpeg) no-repeat;
+    /* background-size: cover; */
+    background-size: contain;
+
 }
