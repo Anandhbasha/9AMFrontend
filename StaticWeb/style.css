@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav_container{
+    background-color: aqua;
+    height: 10vh;
+    text-align: center;
+    padding-top: 15px;
+}
+
+a{
+    padding-right: 40px;
+    text-decoration: none;
+    color: brown;
+    font-size: 2em;
+    font-weight: 700;
+}
