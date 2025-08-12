@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            /* height: 150px; */
+            width: 200px;
+            background-color: palevioletred;
+        }
+        .boxes{
+            height: 100vh;
+            display: flex;
+            gap: 5px;
+            /* flex-direction: row-reverse; */
+            /* justify-content: space-evenly; */
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+        .box1{
+            /* flex-basis: 500px; */
+            /* flex-shrink: 0; */
+            flex-grow: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes" >
+        <div class="box box1" style="order: 3;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint rerum modi asperiores doloribus!</div>
+        <div class="box" style="order: 2;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint rerum modi asperiores doloribus! Earum culpa quidem accusamus assumenda sed inventore deleniti voluptates amet quis omnis, asperiores voluptas atque minus labore!</div>
+        <div class="box" style="order: 4;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint rerum modi asperiores doloribus! Earum culpa quidem accusamus assumenda sed inventore deleniti voluptates amet quis omnis, asperiores voluptas atque minus labore!</div>
+        <div class="box" style="order: 1;">Lorem </div>
+        <div class="box" style="order: 5;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint rerum modi asperiores doloribus! Earum culpa quidem accusamus assumenda sed inventore deleniti voluptates amet quis omnis, asperiores voluptas atque minus labore!</div>
+        <div class="box" style="order: 6;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint rerum modi asperiores doloribus! Earum culpa quidem accusamus assumenda sed inventore deleniti voluptates amet quis omnis, asperiores voluptas atque minus labore!</div>
+        <div class="box" style="order: 7;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint rerum modi asperiores doloribus! Earum culpa quidem accusamus assumenda sed inventore deleniti voluptates amet quis omnis, asperiores voluptas atque minus labore!</div>
+    </div>
+</body>
+</html>
