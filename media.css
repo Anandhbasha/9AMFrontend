@@ -1,0 +1,45 @@
+:root{
+    --primarycolor:rgba(162, 10, 10, 0.26);
+    --secondary:rgba(0, 0, 72, 0.182);
+    --heading_text:100px
+}
+
+.mediaBox{
+    background-color:(var(--primarycolor));
+    width: 200px;
+    height: 200px;
+}
+
+@media screen and (max-width:740px) {
+    .mediaBox{
+        /* background-color: blue; */
+        /* display: none; */
+        border-radius: 50%;
+        background-color: palevioletred;
+    }
+}
+
+.mediaBox{
+    animation: colorchange 4s ease infinite;
+}
+@keyframes colorchange{
+    0%{
+        background-color: black;
+    }
+    25%{
+        background-color: steelblue;
+    }
+    50%{
+        background-color: green;
+    }
+    100%{
+        background-color: yellow;
+    }
+}
+table{
+    border-collapse: collapse;
+}
+
+tr:nth-child(3){
+    background-color: red;
+}

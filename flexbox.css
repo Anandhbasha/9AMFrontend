@@ -1,0 +1,86 @@
+.boxes{
+    /* margin-left: 200px; */
+    /* display: flex;
+    height: 100vh;
+    gap: 10px; */
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space-between;
+     */
+     /* justify-content: space-around; */
+     /* justify-content: space-evenly; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
+}
+/* .box{
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.box1{
+    /* flex-shrink: 0; */
+    /* flex-basis: 400px; */
+    /* flex-grow: 2; */
+}
+
+/* grid */
+.boxes{
+    display: grid;
+    height: 100vh;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    /* grid-template-rows: ); */
+}
+.box{
+    background-color: purple;
+}
+.box1{
+    /* grid-column: span 2; */
+    grid-column: 1/4;
+}
+
+.grid{
+    display: grid;
+    height: 100vh;
+    grid-template-areas: 
+    "h h h"
+    "s c1 c1"
+    "s c2 c3"
+    "f f f";
+}
+.head{
+    grid-area: h;
+    background-color: steelblue;
+}
+.sidebar{
+    grid-area: s;
+    background-color: aqua;
+}
+.con1{
+    grid-area: c1;
+    background-color: peachpuff;
+}
+.con2{
+    grid-area: c2;
+    background-color: chartreuse;
+}
+.con3{
+    grid-area: c3;
+    background-color: black;
+}
+.foot{
+    grid-area: f;
+    background-color: green;
+}
+
+@media (max-width:700px){
+    .foot{
+        background-color: pink;
+    }
+}
