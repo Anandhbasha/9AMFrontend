@@ -229,12 +229,22 @@ let arr1 = [50,545,6546,32154465,5341541,755]
 // }
 // foreach
 
-let name = "anandh"
+let names = "anandh"
 // a
 // an
 // ana
 // anan
 // anandh
+let temp=""
+// for(let x of names){
+//     temp+=x
+//     console.log(temp);    
+// }
+
+for(let x=names.length-1;x>=0;x--){
+    temp+=names[x]
+    console.log(temp);   
+}
 
 // h
 // hd
@@ -245,3 +255,75 @@ let name = "anandh"
 // an
 // a
 arr1.forEach((x)=>console.log(x))
+
+
+// push
+let arra2 = [20,44,52,88]
+arra2.push(100)
+console.log(arra2);
+arra2[5] = 500
+console.log(arra2);
+
+
+// pop
+arra2.pop()
+console.log(arra2);
+
+// shift
+    arra2.shift()
+    console.log(arra2);
+    
+// unshift
+    arra2.unshift(600)
+    console.log(arra2);
+// indexof
+console.log(arra2.indexOf(600));
+
+// includes
+console.log(arra2.includes(660));
+// map
+    arra2.map((item)=>console.log(item))
+// reduce
+let total = arra2.reduce((acc,sum)=>acc+sum)//sum=600 acc=0
+console.log(total);
+
+// filter
+console.log(arra2.filter((item)=>item%3==0));
+
+// sort
+let array1 = ['a',"c","d","b"]
+let array2 = [10,20,13,15,16]
+array1.sort()
+array2.sort()
+console.log(array1);
+console.log(array2);
+// reverse
+array1.reverse()
+array2.reverse()
+console.log(array1);
+console.log(array2);
+// concat
+let a = [1,2]
+let b = [2,3]
+console.log(a.concat(b));
+
+// find
+console.log(a.find((x)=>x==10));
+
+// slice
+console.log(array1.slice(0,2));
+
+// splice
+let fruits = ['apple','kiwi','orange']
+fruits.splice(1,1,'grapes')
+console.log(fruits);
+
+
+// join
+let words = ["Hello","World"]
+console.log(words.join(" "));
+
+// split
+let newName = "Arun kumar"
+let newValue = newName.split(" ")
+console.log(newValue)
