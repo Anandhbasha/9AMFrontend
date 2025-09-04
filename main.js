@@ -425,19 +425,126 @@
 // fetchData.then((result)=>{console.log(result)})
 // .catch((err)=>console.log(err))
 // async
-let fetchData = async()=>{
+// let fetchData = async()=>{
+//     try{
+//         let res = await fetch('https://jsonplaceholder.typicode.com/po')
+//     if(!res.ok){
+//         throw Error ("Unable to connect")
+//     }
+//     const data =  await res.json()
+//     console.log(data);
+//     }
+//     catch(err){
+//         console.log(err);
+        
+//     }    
+// }
+
+// fetchData()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const loadData = async()=>{
     try{
-        let res = await fetch('https://jsonplaceholder.typicode.com/po')
-    if(!res.ok){
-        throw Error ("Unable to connect")
-    }
-    const data =  await res.json()
-    console.log(data);
+        const res = await fetch('https://jsonplaceholder.typicode.com/posts')
+        if(!res.ok){
+            throw Error("Unable to connect")
+        }
+        const datas = await res.json()
+        console.log(datas);
     }
     catch(err){
         console.log(err);
         
-    }    
+    }
+    
+    
 }
+loadData()
 
-fetchData()
+
+// const comingToClass = new Promise((resolved,reject)=>{
+//     let coming = false
+//     if(!coming){
+//         reject("Still not came")
+//     }
+//     else{
+//         resolved("He is arrived")
+//     }
+// })
+// comingToClass.then((res)=>{
+//     console.log(res)    
+// }).catch((err)=>{
+//     console.log(err);    
+// })
+
+// DOM
+// let btn = document.createElement('button')
+
+// btn.innerHTML = "Click"
+
+// document.body.append(btn)
+
+
+// btn.addEventListener('click',()=>{
+//     btn.style.backgroundColor="red"
+//     btn.innerHTML ==="Click"?btn.innerText = "Clicked":btn.innerText ="Click"
+// })
+
+const datas = [
+    {id:1,name:"xyz",city:"cbe"},
+    {id:2,name:"abc",city:"salem"},
+    {id:3,name:"def",city:"erode"},
+    {id:4,name:"saw",city:"karur"},
+    {id:5,name:"awe",city:"trichy"},
+    {id:6,name:"ver",city:"chennai"},
+    {id:7,name:"eff",city:"pondy"},
+    {id:8,name:"wer",city:"ooty"},
+    {id:9,name:"jhg",city:"pollachi"},
+    {id:10,name:"ilk",city:"cbe"},
+]
+
+
+const div = document.createElement('div')
+const table = document.createElement('table')
+const thead = document.createElement('thead')
+const tbody = document.createElement('tbody')
+const th = document.createElement('th')
+const tr = document.createElement('tr')
+const td = document.createElement('td')
+
+div.appendChild(table)
+table.appendChild(thead)
+thead.appendChild(th)
+table.appendChild(tbody)
+tbody.appendChild(tr)
+tr.appendChild(td)
+document.body.append(div)
+
+
+// console.log(datas);
+// 
+
+// let button = document.getElementById('btn')
+// let button = document.querySelector('#btn')
+// let button = document.querySelectorAll('.btn')
+// let button = document.getElementsByTagName('button')
+let button = document.getElementsByClassName('button')
+const btnClick = ()=>{
+    button.textContent = "OFF"
+}
