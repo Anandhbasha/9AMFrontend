@@ -1,60 +1,36 @@
-# print("Welcome to Python" ,end='\t')
-# print("this first program of python")
+''' print("Hello python",end='\t')
+print("This is first Page of Python")
 
-# print('apple',"banana","kiwi",sep='/')
+print("xyz","abc","def","wet",sep='_')
 
-# a=10
-# a=20
+
+a="hello"
+
+b=10
+print(a,b,sep="-") '''
+# datatypes
+    # simple datatypes
+    # premitive
+# a=20.5
+# a=60
 # print(a)
-# b=50
-a,b,c=20,50,10
+# b="Hello"
+# tclass = True
+# print(type(tclass))
 
-print(a,b,c)
+# swapping
+# a=20
+# b=30
+# c=40
 
 # temp = a
-# a=b
-# b=c
-# c=temp
-# print(a,b,c)
 
-b,c,a=a,b,c
+# a=b  # a=30
+
+# b=c # b=40
+
+# c=temp #c=20
+
+a,b,c=20,30,40
+c,a,b = a,b,c
 print(a,b,c)
-
-# datatypes
-    # simple data types
-        # int
-a=True
-print(type(a))
-        # float
-        # string
-        # boolean
-    # complex datatypes
-        # list
-arr = [10,50,77,88,99]
-print(arr[0])
-print(arr[1])
-print(arr[2])
-print(arr[3])
-        # tuple
-data = (45,101,202,808)
-print(data)
-print(type(data))
-        # set
-ids = {101,101,102,102,103}
-print(ids)
-        # dictionary
-person = {
-    "name":"xyz",
-    "age":20,
-    "city":"CBE"
-}
-print(person["name"])
-
-
-age=18
-if age>=18:
-    print("He is Eliglible")
-
-def add():
-    print("add")
-add()
