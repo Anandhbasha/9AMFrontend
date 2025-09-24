@@ -92,8 +92,30 @@ num2=10
 # OR
 # NOT
 
-print(num1>num2 and num1==20 and num1<num2)
-print(num1>num2 or num1==20 or num1<num2)
+# print(num1>num2 and num1==20 and num1<num2)
+# print(num1>num2 or num1==20 or num1<num2)
 
-print(not num1==20)
+# print(not num1==20)
 
+# membership operator
+list = ["red","green","Yellow"]
+
+# print("red" in list)
+# print("red" not in list)
+
+
+a=[1,2,3,4]
+b=[1,2,3,4]
+
+c=a
+
+print(a is b)
+print(a is c)
+
+# condtional Statements
+# if
+age =12
+if age>=18:
+    print("He is Eligible to Vote")
+else:
+    print("not Eligible")
