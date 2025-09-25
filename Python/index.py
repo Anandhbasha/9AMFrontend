@@ -114,8 +114,95 @@ print(a is c)
 
 # condtional Statements
 # if
-age =12
-if age>=18:
-    print("He is Eligible to Vote")
+age =20
+# if age>=18:
+#     print("He is Eligible to Vote")
+# else:
+#     print("not Eligible")
+
+# elif
+# if age>19:
+#     print("Adult")
+# elif age<13:
+#     print("Child")
+# else:
+#     print("Teenagers")
+
+# nested if
+
+ug=72
+hsc=77
+sslc=60
+if ug>70:
+    print("He is Eliglible based on UG Mark")
+    if hsc>70:
+        print("He is eligible based pn HSC")
+        if sslc>=70:
+            print("He is elible based on SSLC")
+        else:
+            print("He is Not elible based on SSLC")
+    else:
+        print("He is not eligible based pn HSC")
 else:
-    print("not Eligible")
+    print("He is not elible")
+        
+# looping Statements
+
+# while
+count = 5
+x=0
+while count>=x:
+    print(x)
+    x=x+1
+
+
+list = [50,88,60,90,44]
+
+# x = 0
+# while x<5:
+#     print(list[x])
+#     x+=1
+
+# for 
+
+
+for s in list:
+    print(s)
+
+for x in range(9):
+    print(x)
+
+
+course = "Python"
+rev = ""
+
+for s in course:
+    rev = s+rev
+print(rev)
+
+
+# print your name
+# input = xyz
+# output
+# x
+# xy
+# xyz
+
+# ******
+#  *****
+#   ****
+#    ***
+#     **
+#      *
+
+# input [50,60,80,90.77]
+
+# Output :[5,6,8,9,14]
+# output :41
+
+# array sort
+
+# input :[0,10,0,1,20,8,7]
+# Output :[1,7.8,10,20,0,0]
+
+# enter a triple digit number input get a output number in text words
