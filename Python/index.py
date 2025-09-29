@@ -79,44 +79,44 @@ num2=10
 # print(num1//num2)
 # print(num1%num2)
 
-# # comparison operator
-# # >,<,>=,<=,==
-# print(num1>num2)
-# print(num1<num2)
-# print(num1<=20)
-# print(num1>=20)
-# print(num1==20)
+# # # comparison operator
+# # # >,<,>=,<=,==
+# # print(num1>num2)
+# # print(num1<num2)
+# # print(num1<=20)
+# # print(num1>=20)
+# # print(num1==20)
 
-# Logical Opearators
-# AND
-# OR
-# NOT
+# # Logical Opearators
+# # AND
+# # OR
+# # NOT
 
-# print(num1>num2 and num1==20 and num1<num2)
-# print(num1>num2 or num1==20 or num1<num2)
+# # print(num1>num2 and num1==20 and num1<num2)
+# # print(num1>num2 or num1==20 or num1<num2)
 
-# print(not num1==20)
+# # print(not num1==20)
 
-# membership operator
-list = ["red","green","Yellow"]
+# # membership operator
+# list = ["red","green","Yellow"]
 
-# print("red" in list)
-# print("red" not in list)
+# # print("red" in list)
+# # print("red" not in list)
 
 
-a=[1,2,3,4]
-b=[1,2,3,4]
+# a=[1,2,3,4]
+# b=[1,2,3,4]
 
-c=a
+# c=a
 
-print(a is b)
-print(a is c)
+# print(a is b)
+# print(a is c)
 
-# condtional Statements
-# if
-age =20
-# if age>=18:
-#     print("He is Eligible to Vote")
+# # condtional Statements
+# # if
+# age =20
+# # if age>=18:
+# #     print("He is Eligible to Vote")
 # else:
 #     print("not Eligible")
 
@@ -128,35 +128,35 @@ age =20
 # else:
 #     print("Teenagers")
 
-# nested if
+# # nested if
 
-ug=72
-hsc=77
-sslc=60
-if ug>70:
-    print("He is Eliglible based on UG Mark")
-    if hsc>70:
-        print("He is eligible based pn HSC")
-        if sslc>=70:
-            print("He is elible based on SSLC")
-        else:
-            print("He is Not elible based on SSLC")
-    else:
-        print("He is not eligible based pn HSC")
-else:
-    print("He is not elible")
+# ug=72
+# hsc=77
+# sslc=60
+# if ug>70:
+#     print("He is Eliglible based on UG Mark")
+#     if hsc>70:
+#         print("He is eligible based pn HSC")
+#         if sslc>=70:
+#             print("He is elible based on SSLC")
+#         else:
+#             print("He is Not elible based on SSLC")
+#     else:
+#         print("He is not eligible based pn HSC")
+# else:
+#     print("He is not elible")
         
-# looping Statements
+# # looping Statements
 
-# while
-count = 5
-x=0
-while count>=x:
-    print(x)
-    x=x+1
+# # while
+# count = 5
+# x=0
+# while count>=x:
+#     print(x)
+#     x=x+1
 
 
-list = [50,88,60,90,44]
+# list = [50,88,60,90,44]
 
 # x = 0
 # while x<5:
@@ -166,19 +166,19 @@ list = [50,88,60,90,44]
 # for 
 
 
-for s in list:
-    print(s)
+# for s in list:
+#     print(s)
 
-for x in range(9):
-    print(x)
+# for x in range(9):
+#     print(x)
 
 
-course = "Python"
-rev = ""
+# course = "Python"
+# rev = ""
 
-for s in course:
-    rev = s+rev
-print(rev)
+# for s in course:
+#     rev = s+rev
+# print(rev)
 
 
 # print your name
@@ -206,3 +206,10 @@ print(rev)
 # Output :[1,7.8,10,20,0,0]
 
 # enter a triple digit number input get a output number in text words
+
+# * Task
+
+# num  = 6
+for a in range(6):
+    print(" "*a+"*"*(6-a)) 
+    
