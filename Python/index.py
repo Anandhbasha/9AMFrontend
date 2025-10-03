@@ -209,7 +209,9 @@ num2=10
 
 # * Task
 
-# num  = 6
-for a in range(6):
-    print(" "*a+"*"*(6-a)) 
-    
+# # num  = 6
+# for a in range(6):
+#     print(" "*a+"*"*(6-a)) 
+
+
+# functions

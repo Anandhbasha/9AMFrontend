@@ -1,0 +1,2 @@
+This new writing about Python
+ Add this line to existing page
