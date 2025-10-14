@@ -1,0 +1,114 @@
+import pandas as pd
+s1 = pd.Series([10,20,30,40],index=["a","x","c","d"])
+print(s1[s1>20])
+
+
+fruits = {"apple":3,"kiwi":2,"banana":5}
+
+seriesFruits = pd.Series(fruits)
+print(seriesFruits)
+
+
+# dataframe
+data = {
+    "Name":["xyz","abc","def"],
+    "age":[20,30,32],
+    "city":["CBE","Salem","Erode"]
+}
+
+newframes = pd.DataFrame(data)
+print(newframes)
+
+# dumps
+import json
+newjson = json.dumps(data)
+print(newjson)
+print(type(newjson))
+
+newval = json.loads(newjson)
+print(type(newval))
+
+import pandas as pd
+
+s1 = pd.Series([1,3,5,7,9])
+# print(s1)
+
+s2 = pd.Series([10,20,30,40],index=["a","b","c","d"])
+# s2 = pd.Series([10,20,30,40])
+
+# print(s2)
+
+# fruits = {"apple":3,"kiwi":2,"banana":5}
+
+# seriesFruits = pd.Series(fruits)
+# print(seriesFruits)
+
+# print(s1*2)
+# print(s1+s2)
+
+# boolean
+# print(s2[s2>15])
+# print(s2['a'])
+
+# dataframe
+data = {
+    "Name":["xyz","abc","def"],
+    "age":[20,30,32],
+    "city":["CBE","Salem","Erode"]
+}
+
+df = pd.DataFrame(data)
+# df = pd.DataFrame(data,index=[1,2,3])
+# print(df)
+
+# print(df.head(1))
+# print(df.tail(1))
+# print(df.shape)
+# print(df.columns)
+# print(df.dtypes)
+
+df['email'] = ["abc@gmail.com","xyz@gmail.com","def@gmail.com"]
+
+# print(df)
+
+# print(df.loc[0])
+
+# print(df.loc[0,2,'Name'])
+print(df.loc[0:2,"Name"])
+# print(df.loc[0])
+print(df.iloc[0:2,0:2])
+
+df.to_csv("out.csv" ,index=True)
+# df.to_csv("output.csv" ,index=False)
+
+# print(df[(df['age']>20)])
+
+
+# data = {
+#     "Name":["xyz","abc","def"],
+#     "age":[20,30,32],
+#     "city":["CBE","Salem","Erode"]
+# }
+
+# df = pd.DataFrame(data)
+# # scalar
+# # print(df.at[0,'email'])
+# # print(df.iat[0,0])
+
+
+# df['email'] = ["abc@gmail.com","xyz@gmail.com","def@gmail.com"]
+# # Multiple condition
+# # print(df[(df['age']>20) & (df['email']=="def@gmail.com")])
+
+
+# # isin()
+# # print(df[(df['city'].isin(['Salem','CBE']))])
+
+# # query
+# # print(df.query("age>30 and city=='Erode'"))
+
+# df.to_excel("newdata.xlsx",sheet_name="Students" ,index=False)
+
+# readData =pd.read_excel('newdata.xlsx')
+# print(readData)
+
