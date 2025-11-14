@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Welcome</h1> 
-    <a href="add.html">Add Student</a> 
+    <a href="{{url_for('studentBp.add')}}">Add Student</a> 
     <table>
         <thead>
             <th>Name</th>
@@ -16,12 +16,18 @@
             <th>Course</th>
         </thead>
         <tbody>
+            {% for s in students %}
             <tr>
-                <td>{{stu.name}}</td>
-                <td>{{stu.age}}</td>
-                <td>{{stu.mobile}}</td>
-                <td>{{stu.course}}</td>
+                <td>{{s.name}}</td>
+                <td>{{s.mobile}}</td>
+                <td>{{s.age}}</td>
+                <td>{{s.course}}</td>
+                <td>
+                    <a href="{{ url_for('studentBp.update', id=s._id) }}">Edit</a> |
+                    <a href="{{ url_for('studentBp.delete', id=s._id) }}" onclick="return confirm('Are you sure?')">Delete</a>
+                </td>
             </tr>
+            {% endfor %}
         </tbody>
     </table>
 </body>

@@ -1,7 +1,7 @@
 from db import get_db
 from bson.objectid import ObjectId
 
-db = get_db
+db = get_db()
 collection  = db["NewTable"]
 # Add newStudent
 def addStudent(data):
@@ -16,7 +16,7 @@ def getStudentById(stdId):
     return collection.find_one({"_id":ObjectId(stdId)})
 # updateNewStudent
 def updateStudent(stdId,updatedData):
-    collection.update_one({"_id":ObjectId(stdId)},{"$set":{updatedData}})
+    collection.update_one({"_id":ObjectId(stdId)},{"$set":updatedData})
 
 # delete
 def deleteStudent(stdId):
