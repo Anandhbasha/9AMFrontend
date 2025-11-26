@@ -215,3 +215,7 @@ num2=10
 
 
 # functions
+
+
+a = int(input("Enter value"))
+print(a)
